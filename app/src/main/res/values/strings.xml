@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Silent to Volume switcher</string>
+    <string name="accessibility_service_description">Monitors silent/vibrate mode and restores ringer after delay</string>
+
+</resources>
