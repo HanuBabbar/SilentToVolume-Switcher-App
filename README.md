@@ -38,6 +38,13 @@ With SilentToVolume-Switcher, your phone will **automatically switch back to vol
 - 🏠 **Anyone** who forgets to switch the ringer back on.  
 
 ---
+## Screenshots 📷
+<img width="1919" height="1031" alt="Screenshot 2025-08-31 213105" src="https://github.com/user-attachments/assets/f72643c3-374d-490b-af2a-5abec833f78e" />
+<img width="281" height="611" alt="Screenshot 2025-08-31 212726" src="https://github.com/user-attachments/assets/49c31849-96c9-42e9-a462-a3e7df2255f1" />
+
+
+
+---
 
 ## ⚡ Future Plans  
 - ⏰ Add scheduling (auto-silent during specific hours).  
