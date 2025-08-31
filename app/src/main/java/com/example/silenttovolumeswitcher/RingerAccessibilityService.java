@@ -11,6 +11,13 @@ public class RingerAccessibilityService extends AccessibilityService {
 
     private Handler handler = new Handler();
     private boolean alreadyScheduled = false;
+    private SettingsManager settingsManager;
+
+    @Override
+    public void onCreate(){
+        super.onCreate();
+        settingsManager = new SettingsManager(this);
+    }
 
     @Override
     public void onAccessibilityEvent(AccessibilityEvent event) {
@@ -25,6 +32,7 @@ public class RingerAccessibilityService extends AccessibilityService {
 
         if (mode == AudioManager.RINGER_MODE_SILENT || mode == AudioManager.RINGER_MODE_VIBRATE) {
             alreadyScheduled = true;
+            long delay = settingsManager.getTimeDelay();
 
             handler.postDelayed(() -> {
                 int currentMode = audioManager.getRingerMode();
@@ -32,7 +40,7 @@ public class RingerAccessibilityService extends AccessibilityService {
                     audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
                 }
                 alreadyScheduled = false;
-            }, 10 * 1000); // 30 minutes
+            },   delay); // 6 hours
         }
     }
 

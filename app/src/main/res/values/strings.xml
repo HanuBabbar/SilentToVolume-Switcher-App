@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Silent to Volume switcher</string>
     <string name="accessibility_service_description">Monitors silent/vibrate mode and restores ringer after delay</string>
+    <string name="instruction_text">After how much time should we switch back to Volume mode</string>
+    <string name="time_unit"></string>
+    <string name="save_button_text">Save</string>
+    <string name="accessibility_settings_button_text">Open Accessibility Settings</string>
 
 </resources>
